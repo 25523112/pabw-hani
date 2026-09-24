@@ -3,81 +3,85 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Hani - Kelas Terbuka Kampus</title>
+    <title>Daftar Series yang Pernah Saya Tonton</title>
     <meta name="description" content="Halaman profil dan pendaftaran Kelas Terbuka Kampus.">
 </head>
 
 <body>
 
     <header>
-        <h1>Kelas Terbuka Kampus</h1>
+        <h1>Daftar Series yang pernah saya tonton</h1>
         <p>Belajar dan berkembang bersama.</p>
 
         <nav aria-label="Navigasi utama">
     <ul>
-        <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#daftar">Daftar</a></li>
-        <li><a href="#cerita">Cerita</a></li>
+        <li><a href="#series">Daftar Series</a></li>
+        <li><a href="#daftar">Tambah Series</a></li>
+        <li><a href="#tentang-saya">Tentang Saya</a></li>
     </ul>
 </nav>
     </header>
 
     <main>
 
-        <section id="tentang">
-            <h2>Belajar membuat portofolio yang mudah dibaca</h2>
-            <p>
-                Kelas ini membantu mahasiswa memahami cara membuat
-                halaman web yang terstruktur, mudah dibaca, dan aksesibel.
-            </p>
+        <section id="series">
+        <h2>Daftar Series yang Pernah Saya Tonton</h2>
 
-            <h2>Yang perlu dibawa</h2>
-            <ul>
-                <li>Laptop</li>
-                <li>Catatan</li>
-                <li>Semangat belajar</li>
-            </ul>
-        </section>
+         <table>
+            <caption>Daftar series yang pernah saya tonton</caption>
 
-        <section id="agenda">
-            <h2>Daftar sesi</h2>
+         <thead>
+            <tr>
+                <th scope="col">Judul Series</th>
+                <th scope="col">Negara</th>
+                <th scope="col">Tahun</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Rating</th>
+            </tr>
+          </thead>
 
-            <table>
-                <caption>Agenda Kelas Terbuka Kampus</caption>
+        <tbody>
+            <tr>
+                <td>Lovely Runner</td>
+                <td>Korea Selatan</td>
+                <td>2024</td>
+                <td>Romance, Fantasy</td>
+                <td>9/10</td>
+            </tr>
 
-                <thead>
-                    <tr>
-                        <th scope="col">Sesi</th>
-                        <th scope="col">Materi</th>
-                        <th scope="col">Waktu</th>
-                    </tr>
-                </thead>
+            <tr>
+                <td>Business Proposal</td>
+                <td>Korea Selatan</td>
+                <td>2022</td>
+                <td>Romance, Comedy</td>
+                <td>9/10</td>
+                </tr>
 
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>HTML Semantik</td>
-                        <td>08.00</td>
-                    </tr>
+            <tr>
+                <td>Descendants of the Sun (DOTS)</td>
+                <td>Korea Selatan</td>
+                <td>2016</td>
+                <td>Romance, Drama, Action</td>
+                <td>9,5/10</td>
+            </tr>
+        </tbody>
 
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Form dan Validasi</td>
-                        <td>10.00</td>
-                    </tr>
+        </table>
 
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Aksesibilitas Web</td>
-                        <td>13.00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <figure>
+            <img src="media/LovelyRunner.jpg"
+                alt="Poster series Lovely Runner"
+                width="300"
+                height="450"
+                loading="lazy">
+            <figcaption>Poster series Lovely Runner</figcaption>
+        
+        </figure>
+
+    </section>
 
         <section id="daftar">
-            <h2>Daftar sesi</h2>
+            <h2>Tambah Series</h2>
 
             <form action="#" method="post">
 
@@ -85,50 +89,35 @@
                     <legend>Data Pendaftaran</legend>
 
                     <p>
-                        <label for="nama">Nama lengkap</label>
+                        <label for="judul-series">Judul Series</label>
                         <input
-                            id="nama"
-                            name="nama"
+                            id="judul-series"
+                            name="judul-series"
                             type="text"
-                            autocomplete="name"
                             required
                         >
                     </p>
 
                     <p>
-                        <label for="email">Email</label>
+                        <label for="negara">Negara</label>
                         <input
-                            id="email"
-                            name="email"
-                            type="email"
-                            autocomplete="email"
+                            id="negara"
+                            name="negara"
+                            type="text"
                             required
                         >
                     </p>
 
                     <p>
-                        <label for="nim">NIM</label>
+                        <label for="rating">Rating</label>
                         <input
-                            id="nim"
-                            name="nim"
-                            type="text"
-                            inputmode="numeric"
-                            pattern="[0-9]{8}"
-                            aria-describedby="nim-hint"
+                            id="rating"
+                            name="rating"
+                            type="number"
+                            min="0"
+                            max="10"
+                            step="0.1"
                             required
-                        >
-                    </p>
-
-                    <p id="nim-hint">
-                        NIM harus terdiri dari tepat 8 digit angka.
-                    </p>
-
-                    <p>
-                        <label for="topik">Topik yang ingin dipelajari</label>
-                        <input
-                            id="topik"
-                            name="topik"
-                            type="text"
                         >
                     </p>
 
@@ -139,26 +128,11 @@
             </form>
         </section>
 
-        <aside>
-            <h2>Info kelas</h2>
-            <p>
-                Kelas terbuka untuk mahasiswa yang ingin belajar
-                pengembangan aplikasi berbasis web.
-            </p>
-        </aside>
-
-        <section id="cerita">
-            <h2>Cerita dari kelas sebelumnya</h2>
-            <p>
-                Peserta sebelumnya belajar membuat halaman web
-                yang lebih terstruktur dan mudah digunakan.
-            </p>
-        </section>
-
     </main>
 
-    <footer>
-        <p>&copy; 2026 Kelas Terbuka Kampus</p>
+    <footer id="tentang-saya">
+        <p>Tentang Saya: Saya adalah mahasiswa Informatika yang sedang belajar membuat halaman web.</p>
+         <p>&copy; 2026 Daftar Series</p>
     </footer>
 
 </body>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Hani - Kelas Terbuka Kampus</title>
+    <meta name="description" content="Halaman profil dan pendaftaran Kelas Terbuka Kampus.">
+</head>
+
+<body>
+
+    <header>
+        <h1>Kelas Terbuka Kampus</h1>
+        <p>Belajar dan berkembang bersama.</p>
+
+        <nav aria-label="Navigasi utama">
+    <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#daftar">Daftar</a></li>
+        <li><a href="#cerita">Cerita</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+
+        <section id="tentang">
+            <h2>Belajar membuat portofolio yang mudah dibaca</h2>
+            <p>
+                Kelas ini membantu mahasiswa memahami cara membuat
+                halaman web yang terstruktur, mudah dibaca, dan aksesibel.
+            </p>
+
+            <h2>Yang perlu dibawa</h2>
+            <ul>
+                <li>Laptop</li>
+                <li>Catatan</li>
+                <li>Semangat belajar</li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Daftar sesi</h2>
+
+            <table>
+                <caption>Agenda Kelas Terbuka Kampus</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Sesi</th>
+                        <th scope="col">Materi</th>
+                        <th scope="col">Waktu</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>HTML Semantik</td>
+                        <td>08.00</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Form dan Validasi</td>
+                        <td>10.00</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Aksesibilitas Web</td>
+                        <td>13.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="daftar">
+            <h2>Daftar sesi</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Data Pendaftaran</legend>
+
+                    <p>
+                        <label for="nama">Nama lengkap</label>
+                        <input
+                            id="nama"
+                            name="nama"
+                            type="text"
+                            autocomplete="name"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="nim">NIM</label>
+                        <input
+                            id="nim"
+                            name="nim"
+                            type="text"
+                            inputmode="numeric"
+                            pattern="[0-9]{8}"
+                            aria-describedby="nim-hint"
+                            required
+                        >
+                    </p>
+
+                    <p id="nim-hint">
+                        NIM harus terdiri dari tepat 8 digit angka.
+                    </p>
+
+                    <p>
+                        <label for="topik">Topik yang ingin dipelajari</label>
+                        <input
+                            id="topik"
+                            name="topik"
+                            type="text"
+                        >
+                    </p>
+
+                    <button type="submit">Daftar</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+        <aside>
+            <h2>Info kelas</h2>
+            <p>
+                Kelas terbuka untuk mahasiswa yang ingin belajar
+                pengembangan aplikasi berbasis web.
+            </p>
+        </aside>
+
+        <section id="cerita">
+            <h2>Cerita dari kelas sebelumnya</h2>
+            <p>
+                Peserta sebelumnya belajar membuat halaman web
+                yang lebih terstruktur dan mudah digunakan.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kelas Terbuka Kampus</p>
+    </footer>
+
+</body>
+</html>

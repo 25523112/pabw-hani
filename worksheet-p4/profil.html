@@ -3,24 +3,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Daftar Series yang Pernah Saya Tonton</title>
-    <meta name="description" content="Halaman profil dan pendaftaran Kelas Terbuka Kampus.">
+    
+    <meta name="description" content="Halaman profil dan pendaftaran Kelas Terbuka Kampus."> 
+
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Daftar Series yang pernah saya tonton</h1>
-        <p>Belajar dan berkembang bersama.</p>
+    <<header>
+    <div class="header-baris">
+        <div>
+            <h1>Daftar Series yang pernah saya tonton</h1>
+            <p>Belajar dan berkembang bersama.</p>
+        </div>
 
         <nav aria-label="Navigasi utama">
-    <ul>
-        <li><a href="#series">Daftar Series</a></li>
-        <li><a href="#daftar">Tambah Series</a></li>
-        <li><a href="#tentang-saya">Tentang Saya</a></li>
-    </ul>
-</nav>
-    </header>
+            <ul>
+                <li><a href="#series">Daftar Series</a></li>
+                <li><a href="#daftar">Tambah Series</a></li>
+                <li><a href="#tentang-saya">Tentang Saya</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <main>
 
@@ -68,17 +80,26 @@
 
         </table>
 
+        <div class="poster-list">
+
         <figure>
-            <img src="media/LovelyRunner.jpg"
-                alt="Poster series Lovely Runner"
-                width="300"
-                height="450"
-                loading="lazy">
-            <figcaption>Poster series Lovely Runner</figcaption>
-        
+                <img src="../worksheet-p3/media/LovelyRunner.jpg" alt="Poster series Lovely Runner">
+                <figcaption>Poster series Lovely Runner</figcaption>
         </figure>
 
-    </section>
+        <figure>
+                <img src="../worksheet-p3/media/BusinessProposal.jpg" alt="Poster series Business Proposal">
+                <figcaption>Poster series Business Proposal</figcaption>
+        </figure>
+
+        <figure>
+                <img src="../worksheet-p3/media/Dots.jpg" alt="Poster series Descendants of the Sun">
+                <figcaption>Poster series Descendants of the Sun</figcaption>
+        </figure>
+
+        </div>
+    
+        </section>
 
         <section id="daftar">
             <h2>Tambah Series</h2>

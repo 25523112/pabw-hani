@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Daftar Series yang Pernah Saya Tonton</title>
+    
+    <meta name="description" content="Halaman profil dan pendaftaran Kelas Terbuka Kampus."> 
+
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
+</head>
+
+<body>
+
+    <<header>
+    <div class="header-baris">
+        <div>
+            <h1>Daftar Series yang pernah saya tonton</h1>
+            <p>Belajar dan berkembang bersama.</p>
+        </div>
+
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#series">Daftar Series</a></li>
+                <li><a href="#daftar">Tambah Series</a></li>
+                <li><a href="#tentang-saya">Tentang Saya</a></li>
+            </ul>
+        </nav>
+        
+        <button type="button" id="theme-toggle">
+            🌙 Tema Gelap
+        </button>
+
+    </div>
+
+</header>
+
+    <main>
+
+        <section id="series">
+        <h2>Daftar Series yang Pernah Saya Tonton</h2>
+
+         <table>
+            <caption>Daftar series yang pernah saya tonton</caption>
+
+         <thead>
+            <tr>
+                <th scope="col">Judul Series</th>
+                <th scope="col">Negara</th>
+                <th scope="col">Tahun</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Rating</th>
+            </tr>
+          </thead>
+
+        <tbody>
+            <tr>
+                <td>Lovely Runner</td>
+                <td>Korea Selatan</td>
+                <td>2024</td>
+                <td>Romance, Fantasy</td>
+                <td>9/10</td>
+            </tr>
+
+            <tr>
+                <td>Business Proposal</td>
+                <td>Korea Selatan</td>
+                <td>2022</td>
+                <td>Romance, Comedy</td>
+                <td>9/10</td>
+                </tr>
+
+            <tr>
+                <td>Descendants of the Sun (DOTS)</td>
+                <td>Korea Selatan</td>
+                <td>2016</td>
+                <td>Romance, Drama, Action</td>
+                <td>9,5/10</td>
+            </tr>
+        </tbody>
+
+        </table>
+
+        <div class="poster-list">
+
+        <figure>
+                <img src="media/LovelyRunner.jpg" alt="Poster series Lovely Runner">
+                <figcaption>Poster series Lovely Runner</figcaption>
+        </figure>
+
+        <figure>
+                <img src="media/BusinessProposal.jpg" alt="Poster series Business Proposal">
+                <figcaption>Poster series Business Proposal</figcaption>
+        </figure>
+
+        <figure>
+                <img src="media/Dots.jpg" alt="Poster series Descendants of the Sun">
+                <figcaption>Poster series Descendants of the Sun</figcaption>
+        </figure>
+
+        </div>
+    
+        </section>
+
+        <section id="daftar">
+            <h2>Tambah Series</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Data Pendaftaran</legend>
+
+                    <p>
+                        <label for="judul-series">Judul Series</label>
+                        <input
+                            id="judul-series"
+                            name="judul-series"
+                            type="text"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="negara">Negara</label>
+                        <input
+                            id="negara"
+                            name="negara"
+                            type="text"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="rating">Rating</label>
+                        <input
+                            id="rating"
+                            name="rating"
+                            type="number"
+                            min="0"
+                            max="10"
+                            step="0.1"
+                            required
+                        >
+                    </p>
+
+                    <button type="submit">Daftar</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="tentang-saya">
+        <p>Tentang Saya: Saya adalah mahasiswa Informatika yang sedang belajar membuat halaman web.</p>
+         <p>&copy; 2026 Daftar Series</p>
+    </footer>
+     
+    <script>
+    const tombolTema = document.getElementById("theme-toggle");
+
+    tombolTema.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+    });
+
+    </script>
+
+    
+    <script type="module" src="js/app.js"></script>
+
+
+</body>
+</html>
